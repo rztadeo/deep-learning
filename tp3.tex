@@ -11,7 +11,7 @@
 \setlength{\textwidth}{430pt}
 \addtolength{\hoffset}{-20pt}
 
-\title{Trabajo Pr\'actico Nº 3}
+\title{Trabajo Pr\'actico NÂº 3}
 \author{Bugnon, Leandro \and Pineda, Leandro \and Rodriguez, Tadeo}
 \date{}
 \newcommand{\norma}[1]{\left\|#1\right\|^2}
@@ -19,11 +19,11 @@
 
 \begin{document}
 %\maketitle
-%##########################  Inicio carátula  ##########################%
+%##########################  Inicio carÃ¡tula  ##########################%
 
 
 
-%88888888888888888888888888  Fin Carátula  88888888888888888888888888%
+%88888888888888888888888888  Fin CarÃ¡tula  88888888888888888888888888%
 \maketitle
 El desarrollo de las redes neuronales profundas, mediante la incorporaci\'on
 de capas convolutivas, ha significado un avance sustancial en el \'area de
@@ -108,9 +108,9 @@ presencia del Dropout, el cual previene de los inconvenientes mencionados.
 \end{figure}
 
 Uno de los par\'ametros mas influyentes de una red neuronal profunda es la arquitectura
-que toman sus capas convolutivas. La cantidad de filtros y el tamaño de los mismos as\'i
-como el n\'umero de capas convolutivas juegan papel preponderante en el diseño y funcionamiento
-de este tipo de red. En particular se medir\'a el desempeño de estas, en el caso extremo de una
+que toman sus capas convolutivas. La cantidad de filtros y el tama\~no de los mismos as\'i
+como el n\'umero de capas convolutivas juegan papel preponderante en el dise\~no y funcionamiento
+de este tipo de red. En particular se medir\'a el desempeÃ±o de estas, en el caso extremo de una
 sola capa convolucional y en un caso con 5 capas convolutivas. En ambos, las capas poseen 32 filtros
 de $3\times3$ pixeles. Estan colocados de manera secuencial, y seguidos por una capa de Maxpooling,
 en forma similar al modelo original.
@@ -145,7 +145,7 @@ con preprocesamiento.
 	
 El otro par\'ametro mas significativo de este tipo de red, se trata del clasificador mismo, las
 capas completamente conectadas al final de la red. Estas representan casi la totalidad de par\'ametros
-que deben ser ajustados en el modelo, influyendo no solo en el desempeño sino tambie\'en en el tiempo
+que deben ser ajustados en el modelo, influyendo no solo en el desempe\~no sino tambie\'en en el tiempo
 de entrenamiento. El modelo actual, consta de una sola capa oculta con 100 neuronas. La estrategia que se
 adopta, y cuyos resultados se muestran en Figura~\ref{ej3c1}, es reducir la cantidad neuronas a 32. Por otro lado
 se desea conocer el efecto de tener mayor cantidad de capas ocultas. En la Figura~\ref{ej3c2} se ve la performance
@@ -185,9 +185,9 @@ es decir la funci\'on:
 
 El efecto de esta sustituci\'on se puede apreciar en la Figura~\ref{ej3d}
 donde se observa un fuerte decaimiento en la calidad del clasificador,
-desempeñandose a\'un peor que el modelo sin preprocesamiento. De esta
+desempe\~nandose a\'un peor que el modelo sin preprocesamiento. De esta
 manera se puede afirmar que la RELU ser\'a una mejor opci\'on en el
-momento de construir un modelo con el mayor desempeño posible para esta
+momento de construir un modelo con el mayor desempe\~no posible para esta
 dataset.
 
 \begin{figure}[h!]
@@ -202,8 +202,8 @@ dataset.
 \end{figure}
 
 \newpage
-Finalmente, otra característica que se desea analizar es el efecto del Dropout.
-Este tiende a disminuir los errores por overfitting, sin embargo, resulta de interés
+Finalmente, otra caracterÃ­stica que se desea analizar es el efecto del Dropout.
+Este tiende a disminuir los errores por overfitting, sin embargo, resulta de interÃ©s
 conocer si el nivel es apropiado o, incluso, si su efecto es en realidad negativo
 en la cosntrucci\'on del modelo.
 
